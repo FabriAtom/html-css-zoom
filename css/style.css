@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width: 100%;
+    background-color: black;
+}
+
+
+.container{
+   height:100vh;
+    background-color: red;
+    margin: 60px 60px 30px;
+    overflow: hidden;
+}
+
+
+.immagini{
+    background-color: yellow;
+    display: block;
+}
+
+.col{
+    width: calc(100% / 7);
+
+}
+
+img{
+    max-width:250px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer{
+    height: 84px;
+    background-color: yellow;
+}
+
+.micro-video{
+    display: flex;
+    align-items:flex-start;
+}
+
+.foot-center{
+    display: flex;
+    justify-content: center;
+}
+
+.foot-end{
+    display: flex;
+    justify-content: flex-end;
+}
