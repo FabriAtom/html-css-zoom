@@ -22,21 +22,17 @@
 
 .immagini{
     background-color: yellow;
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     
 }
 
-.col{
+figure{
     width: calc(100% / 7);
 }
 
-figure{
-    
-}
-
 img{
-    max-width:250px; 
+    width:100%; 
 }
 
 
