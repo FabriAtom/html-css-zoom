@@ -3,19 +3,31 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-family: 'open sans', sans-serif;
+}
 
 .background{
-    width: 100%;
+    height: 100vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    color: white;
     position: relative;
 }
 
-.header{
+
+.alto-destra{
     position: absolute;
     top: 0;
     right: 0;
-    color: white;
 }
+
+
 
 
 .container{
@@ -31,17 +43,37 @@
 
 .immagini{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
+    position: relative;  
 }
+
+.webcam{
+    aspect-ratio: 16/9;
+    flex-basis: 240px;
+    position: relative;
+}
+
 
 figure{
     width: calc(100% / 7);
 }
 
-img{
-    width:100%; 
+.webcam img{
+    width:100%;
+    height: 100%; 
     padding: 3px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.webcam .name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0,2);
+    color: white;
 }
 
 
@@ -70,8 +102,8 @@ img{
 
 /* FOOTER */
 .footer{
-    height: 84px;
-    background-color:white;
+    min-height: 84px;
+    background-color:#4a4a4a;
 }
 
 .micro-video{
@@ -91,5 +123,7 @@ img{
 }
 
 .bottone{
-     
+     background-color: black;
+     color: red;
+     padding: 0 24px;
 }
